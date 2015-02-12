@@ -1,6 +1,3 @@
-##Caches solvable matrices
-
-##creates a special matrix who's solution can be cached
 makeCacheMatrix <- function(m = matrix()) {
 	s <- NULL
 	set <- function(m1) {
@@ -15,7 +12,6 @@ makeCacheMatrix <- function(m = matrix()) {
 		getsolution = getsolution)
 }
 
-#Caches and returns cached solution to special matrix
 cacheSolve <- function(m, ...) {
 	s <- m$getsolution()
 	if(!is.null(s)) {
